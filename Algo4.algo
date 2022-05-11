@@ -1,11 +1,11 @@
 ALGORITHM insertion_sort
 Var
 arr : ARRAY_OF INTEGER [];
-i, j, key : INTEGER
+i, j, n, key : INTEGER
 
 BEGIN
 n := arr.lenght;
-For i from 1 to arr.lenght-1 Step 1 Do
+For i from 1 to n-1 Step 1 Do
     key := arr[i];
     j := i - 1;
     While (j > 0 and arr[j] > key) Do
